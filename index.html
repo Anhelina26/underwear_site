@@ -9,12 +9,14 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"/>
- 
+     
         <title>Unreal-underwear</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="./css/style.css">
     </head>
     
@@ -22,7 +24,7 @@
     <header class="header">
         <div class="container">
         <ul class="header-container">
-            <li><a href="./index.html" class="logo header-logo">Logo</a></li>
+            <li><a href="./index.html" class="logo header-logo hvr-grow ">Logo</a></li>
             <li><a href="https://www.instagram.com/unreal_underwear/" 
                 class="header-link"
                 aria-label="LinkedIn"
@@ -59,7 +61,7 @@
 
      <section class="hero">
         <div class="container hero-container">
-            <h1 class="hero-header">ОПТОВИЙ МАГАЗИН НИЖНЬОЇ БІЛИЗНИ</h1>
+            <a href="https://t.me/alice_in_underwear"><h1 class="hero-header">ОПТОВИЙ МАГАЗИН НИЖНЬОЇ БІЛИЗНИ</h1></a>
         </div>
      </section>
 
@@ -80,6 +82,7 @@
             width="280"
             height="393"
             loading="lazy"
+            class="hvr-grow"
           />
         </li>
 
@@ -97,6 +100,7 @@
             width="298"
             height="197"
             loading="lazy"
+            class="hvr-grow"
           />
         </li>
         <li>
@@ -114,6 +118,7 @@
             width="298"
             height="179"
             loading="lazy"
+            class="hvr-grow"
             />
         </li>
         <li>
@@ -129,7 +134,8 @@
            alt="товар"
            width="280"
            height="393"
-        loading="lazy" />
+           loading="lazy" 
+           class="hvr-grow"/>
         </li>
     </ul>
    
@@ -150,36 +156,44 @@
    <div class="container">
     <ul class="second-galery-container">
         <li>
-            <img srcset="
-                ./images/second-galery/big-1@1x.jpg 270w,
-                ./images/second-galery/big-1@2x.jpg 540w
-              " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-        src="./images/team/small/img_small-3@1x.jpg" alt="товар" loading="lazy" />
+       <img srcset="
+            ./images/second-galery/big-1@1x.jpg 270w,
+            ./images/second-galery/big-1@2x.jpg 540w" 
+            sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+        src="./images/second-galery/big-1@1x.jpg" alt="товар" loading="lazy" class="hvr-grow" id="myImage-1"/>
+          </a>
+        </li>
 
-        </li>
-        <li> <img srcset="
-            ./images/second-galery/bg-2@1x.jpg 270w,
-            ./images/second-galery/bg-2@2x.jpg 540w
-            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-      src="./images/team/small/img_small-3@1x.jpg" alt="товар" loading="lazy" />
-<img src="" alt="">
-        </li>
         <li>
+        
+        <img srcset="
+        ./images/second-galery/bg-2@1x.jpg 270w,
+        ./images/second-galery/bg-2@2x.jpg 540w" sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+      src="./images/second-galery/bg-2@1x.jpg" alt="товар" loading="lazy" class="hvr-grow" id="myImage-1"
+      />
+        </li>
+
+        <li>
+
+       
             <img srcset="
             ./images/second-galery/bg-3@1x.jpg 270w,
             ./images/second-galery/bg-3@2x.jpg 540w
-            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-      src="./images/team/small/img_small-3@1x.jpg" alt="товар" loading="lazy" />
+            " sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+             src="./images/second-galery/bg-3@1x.jpg" alt="товар" loading="lazy" loading="lazy"  class="hvr-grow"
+         />
 
+          
         </li>
         <li>
-            <img srcset="
-            ./images/second-galery/bg-4@1x.jpg 270w,
-            ./images/second-galery/bg-4@2x.jpg 540w
-            " sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-      src="./images/team/small/img_small-3@1x.jpg" alt="товар" loading="lazy" />
-
-        </li>
+                <img srcset="
+                ./images/second-galery/bg-4@1x.jpg 270w,
+                ./images/second-galery/bg-4@2x.jpg 540w
+                " sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                 src="./images/second-galery/bg-4@1x.jpg" alt="товар" loading="lazy"  class="hvr-grow"
+                 />
+            
+             </li>
     </ul>
    </div>
  </section>
@@ -188,7 +202,7 @@
     <div class="container">
         <div class="footer-container">
             <ul class="footer-link_container">
-                <li class="logo">Logo</li>
+                <li class="logo hvr-grow">Logo</li>
                 <li><a href="tel:+380992242811" class="footer-link">+38 099 224 28 11</a></li>
                 <li><a href="mailto:vkrimnak@gmail.com" class="footer-link last-link">vkrimnak@gmail.com</a></li>
             </ul>
@@ -258,6 +272,6 @@
     </div>
 </footer>
 
-
+  <script src="./js/hover.js" type="module"></script>
 </body>
 </html>
