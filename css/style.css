@@ -158,46 +158,6 @@ body{
     }
   }
   
-
-  .hero {
-    background-image: url(../images/hero/small-hero@1x.jpg);
-    height: 635px;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-    position: relative;
-  }
-  
-  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/hero/small-hero@2x.jpg");
-    }
-  }
-  
-  @media screen and (min-width: 481px) {
-    .hero {
-      background-image: url("../images/hero/midium-hero@1x.jpg");
-    }
-  }
-  
-  @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/hero/midium-hero@2x.jpg");
-    }
-  }
-  
-  @media screen and (min-width: 769px) {
-    .hero {
-      background-image: url("../images/hero/hero-big@1x.jpg");
-    }
-  }
-  
-  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/hero/hero-big@2x.jpg");
-    }
-  }
-  
   .hero-header {
     color: #FFF;
     font-family: Montserrat;
