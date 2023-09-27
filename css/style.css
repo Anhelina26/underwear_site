@@ -1,0 +1,457 @@
+/******************Reset********************/
+/*------------Resets------------*/
+h1, h2, h3, h4, h5, h6, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+}
+body{
+  background: #F4F0F0;
+}
+
+
+/******************Header*********************/
+.header {
+    background: #000000;
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+.header-container{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 144px;
+    align-items: center;
+}
+
+.header-link{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word;
+    visibility: hidden;
+}
+
+    @media screen and (min-width: 768px) {
+  .header-link {
+    width: 768px;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-link {
+    width: 1200px;
+  }
+}
+
+.logo {
+  color: #FFF;
+  text-align: center;
+  font-family: Karla;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+/* Додамо медіа-запит для зміни стилів логотипу на маленьких екранах */
+@media screen and (max-width: 320px) {
+.logo {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+}
+.header-link:hover{
+    color: rgb(104, 104, 191);
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 320px) {
+    .container {
+      width: 320px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  }
+
+.hero {
+    background-image: url(../images/hero/Frame\ 1Image_hero-small@1x.jpg);
+    height: 635px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/Frame\ 1image_hero-small@2x.jpg");
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .hero {
+      background-image: url("../images/hero/hero-big@1x.jpg");
+    }
+  }
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/hero-big@2x.jpg");
+    }
+  }
+
+.hero-header{
+    color: white;
+    font-size: 30px;
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 0,5;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    margin-top: 140px;
+
+  }
+
+    @media screen and (min-width: 768px) {
+      .hero-header {
+        font-size: 40px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .hero-header {
+        font-size: 60px;
+        width: 600px;
+        margin-top:120px;
+      }
+    }
+
+
+
+.hero-text{
+    color: white;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+.galery{
+  max-width: 320px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  margin-top: 45px;
+}
+
+.galery-container{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-direction: column;
+
+}
+  
+ @media screen and (min-width: 760px) {
+  .galery-container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  } 
+ }
+
+
+@media screen and (min-width: 780px){
+    .small-container {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
+.small-container_first-image{
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 780px){
+  .small-container_first-image{
+  margin-bottom: 0;
+  }
+}
+
+
+.baner {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(63, 64, 70, 0.4)), url(../images/baner/123-scaled.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (min-width:780px){
+  .baner{
+    height: 491px;
+  }
+}
+
+.baner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.baner-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 30px;
+  max-width: 200px; /* Змінимо width на max-width */
+  padding: 15px;
+  border: 1px solid rgba(78, 48, 48, 0.00);
+  background: rgba(0, 0, 0, 0.58);
+}
+
+@media screen and (min-width: 780px) { /* Додамо "px" після значення ширини */
+  .baner-text {
+      font-size: 20px;
+      max-width: 400px;
+      margin-top: 80px;
+  }
+}
+
+
+.second-galery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+
+}
+
+@media screen and (min-width:780px){
+  .second-galery-container{
+    flex-direction: row;
+  }
+}
+
+
+.footer{
+    width: 100%;
+    height: 500px;
+    background: #000000;
+    
+}
+
+@media screen and (min-width: 1200px) {
+  .footer{ 
+    height: 264px;
+  }
+}
+
+.footer-link{
+    color: #A79090;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer-link_container{
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-link_container{
+     margin-bottom: 0;
+  }
+ }
+
+.last-link{
+  margin-bottom: 0; 
+}
+
+.footer-container{
+  margin-bottom: 10px;
+}
+@media screen and (min-width:1200px) {
+  .footer-container{
+    display: flex;
+    gap: 150px;
+    margin-bottom: 0;
+  
+  }
+}
+
+
+.form-text{
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 10px;
+  width: 328px;
+
+}
+
+
+.footer-social__icon{
+  width: 36px;
+  height: 30px;
+  fill: #FFF;
+}
+.footer-social__icon:hover{
+  fill: #1B56C9;
+}
+
+.footer-icon{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-input{
+  width: 250px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: #000000;
+  color: #F4F0F0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px )
+{
+  .footer-input{
+    width: 300px;
+    height: 35px;
+    margin-bottom:0;
+  }
+}
+
+.form-container{
+  margin-bottom: 20px;
+}
+
+  @media screen and (min-width: 1200px )
+  {
+    .form-container{
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+
+
+.footer__icon-text{
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.icon-container{
+  margin-top:5px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px )
+  {
+    .icon-container{
+      margin-bottom: 0;
+    }
+  }
+
+    ::placeholder{
+  color: #414141;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+.btn{
+  width: 100px;
+  height: 35px;
+  border-radius: 60px;
+  background: #1B56C9;
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+ 
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media screen and (min-width:1200px) {
+  .btn-container{
+    justify-content: start;
+  }
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
