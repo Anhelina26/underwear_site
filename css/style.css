@@ -14,6 +14,7 @@ body{
   background: #F4F0F0;
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
+  cursor:grab;
 }
 
 
@@ -31,7 +32,7 @@ body{
 
  @media screen and (min-width:1200px) {
    .header-container{
-    padding-top: 25px;
+    padding-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +45,7 @@ body{
 
 .header-link{
   color: rgba(255, 255, 255, 0.76);
-  text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -65,20 +65,24 @@ body{
 .logo {
   color: #FFF;
   text-align: center;
-  font-family: Karla;
-  font-size: 24px;
+  color: #F2178E;
+  font-family: 'Oleo Script Swash Caps';
+  font-size: 30px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   line-height: normal;
-  margin-bottom: 15px;
   visibility: visible;
+}
+.other-logo-color{
+  color: #ffffff;
 }
 
 /* Додамо медіа-запит для зміни стилів логотипу на маленьких екранах */
 @media screen and (max-width: 320px) {
 .logo {
-    font-size: 16px; 
+    font-size: 23px; 
     margin-bottom: 10px;
+    width: 181px;
 }
 }
 
@@ -162,14 +166,14 @@ body{
   
   .hero-header {
     color: #FFF;
-    font-family: Montserrat;
+    font-family: 'Oleo Script Swash Caps';
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     position: absolute;
     left: 20px;
-    bottom: 95px;
+    bottom: 100px;
     margin-top: 0;
     text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -184,12 +188,13 @@ body{
   @media screen and (min-width: 780px) {
     .hero-header {
       text-align: center;
-      font-size: 40px;
+      font-size: 35px;
       left: 50%; /* Зсуваємо текст до центру за допомогою відсотків */
       transform: translateX(-50%); /* Це вирівнює текст точно по центру */
       width: auto; /* Скасовуємо жорстко задану ширину */
       position: relative; /* Повертаємо відносне позиціонування */
       bottom:0;
+      margin-top: 250px;
      }
   }
 
@@ -277,6 +282,7 @@ body{
     .small-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     }
   }
 
@@ -360,7 +366,7 @@ body{
 
 @media screen and (min-width: 1200px) {
   .footer{ 
-    height: 350px;
+    height: 264px;
   }
 }
 
@@ -383,7 +389,7 @@ body{
   display: flex;
   justify-content: start;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 75px;
   text-align: center;
 }
 
@@ -398,7 +404,7 @@ body{
 }
 
 .footer-container{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width:1200px) {
   .footer-container{
@@ -418,7 +424,7 @@ body{
   font-weight: 400;
   line-height: normal;
   width: 328px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .footer-social__icon{
@@ -440,10 +446,11 @@ body{
   width: 250px;
   height: 35px;
   border: 1px solid #F2178E;
+  border-radius: 60px;
   background: #000000;
   color: #F2178E;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1200px )
@@ -456,7 +463,7 @@ body{
 }
 
 .form-container{
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
   @media screen and (min-width: 1200px )
@@ -481,7 +488,7 @@ body{
 }
 .icon-container{
   margin-top:5px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 @media screen and (min-width: 1200px )
