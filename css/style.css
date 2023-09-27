@@ -12,6 +12,8 @@ img {
 }
 body{
   background: #F4F0F0;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF;
 }
 
 
@@ -20,9 +22,15 @@ body{
     background: #000000;
     width: 100%;
     height: 70px;
-    position: relative;
+    position: relative; 
 }
 .header-container{
+  visibility: hidden;
+
+}
+
+ @media screen and (min-width:1200px) {
+   .header-container{
     padding-top: 25px;
     display: flex;
     justify-content: center;
@@ -30,21 +38,22 @@ body{
     text-align: center;
     gap: 144px;
     align-items: center;
-}
+    visibility: visible;
+   }
+ }
 
 .header-link{
-    color: rgba(255, 255, 255, 0.76);
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    word-wrap: break-word;
-    visibility: hidden;
+  color: rgba(255, 255, 255, 0.76);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
     @media screen and (min-width: 768px) {
   .header-link {
     width: 768px;
-    visibility: visible;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -62,6 +71,7 @@ body{
   font-weight: 800;
   line-height: normal;
   margin-bottom: 15px;
+  visibility: visible;
 }
 
 /* Додамо медіа-запит для зміни стилів логотипу на маленьких екранах */
@@ -71,6 +81,18 @@ body{
     margin-bottom: 10px;
 }
 }
+
+@media screen and (max-width:1200px){
+   .header-logo{
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* За допомогою цього стилю ви вирівнюєте логотип по центру */
+  
+   }
+}
+
 .header-link:hover{
     color: rgb(104, 104, 191);
 }
@@ -97,65 +119,142 @@ body{
     }
   }
 
-.hero {
-    background-image: url(../images/hero/Frame\ 1Image_hero-small@1x.jpg);
+  .hero {
+    background-image: url(../images/hero/small-hero@1x.jpg);
     height: 635px;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    position: relative;
   }
+  
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
-      background-image: url("../images/hero/Frame\ 1image_hero-small@2x.jpg");
+      background-image: url("../images/hero/small-hero@2x.jpg");
     }
   }
+  
+  @media screen and (min-width: 481px) {
+    .hero {
+      background-image: url("../images/hero/midium-hero@1x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/midium-hero@2x.jpg");
+    }
+  }
+  
   @media screen and (min-width: 769px) {
     .hero {
       background-image: url("../images/hero/hero-big@1x.jpg");
     }
   }
+  
   @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
     .hero {
       background-image: url("../images/hero/hero-big@2x.jpg");
     }
   }
+  
 
-.hero-header{
-    color: white;
-    font-size: 30px;
-    font-family: 'Dela Gothic One';
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: center;
-    line-height: 0,5;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    align-items: center;
-    margin-top: 140px;
-
+  .hero {
+    background-image: url(../images/hero/small-hero@1x.jpg);
+    height: 635px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  
+  @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/small-hero@2x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 481px) {
+    .hero {
+      background-image: url("../images/hero/midium-hero@1x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/midium-hero@2x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .hero {
+      background-image: url("../images/hero/hero-big@1x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/hero-big@2x.jpg");
+    }
+  }
+  
+  .hero-header {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    left: 20px;
+    bottom: 95px;
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 780px) {
+    .hero-header {
+      text-align: center;
+      font-size: 40px;
+      left: 50%; /* Зсуваємо текст до центру за допомогою відсотків */
+      transform: translateX(-50%); /* Це вирівнює текст точно по центру */
+      width: auto; /* Скасовуємо жорстко задану ширину */
+      position: relative; /* Повертаємо відносне позиціонування */
+      bottom:0;
+      margin-top: 200px ;
+     }
   }
 
-    @media screen and (min-width: 768px) {
-      .hero-header {
-        font-size: 40px;
-      }
+  @media screen and (min-width:1200px){
+    .hero-header{
+      margin-top: 230px;
+      width: 584px;
+      margin-right: 600px;
     }
-    @media screen and (min-width: 1200px) {
-      .hero-header {
-        font-size: 60px;
-        width: 600px;
-        margin-top:120px;
-      }
+  }
+
+  
+  @media screen and (min-width: 1200px) {
+    .hero-header {
+      font-size: 50px;
     }
-
-
-
-.hero-text{
+  }
+  
+  @media screen and (min-width: 780px) {
+    .hero-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+/* .hero-text{
     color: white;
     font-size: 16px;
     font-family: Roboto;
     font-weight: 400;
     word-wrap: break-word;
-}
+} */
 
 .hero-container{
     display: flex;
@@ -167,14 +266,17 @@ body{
   padding-top: 80px;
   padding-bottom: 80px;
   
+}
 
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
+    .section {
+      padding-top: 94px;
     padding-bottom: 94px;
     padding-right: 60px;
     padding-left: 60px;
+    }
   }
-}
+
 .galery{
   max-width: 320px; 
   margin: 0 auto; 
@@ -244,7 +346,6 @@ body{
 .baner-text {
   color: #FFF;
   text-align: center;
-  font-family: Montserrat;
   font-size: 10px;
   font-style: italic;
   font-weight: 600;
@@ -295,16 +396,19 @@ body{
 }
 
 .footer-link{
-    color: #A79090;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #898787;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 15px;
 }
 
 .footer-link_container{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -333,22 +437,20 @@ body{
 
 
 .form-text{
-  color: #FFF;
+  color: #898787;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   line-height: normal;
-  margin-bottom: 10px;
   width: 328px;
-
+  margin-bottom: 10px;
 }
-
 
 .footer-social__icon{
   width: 36px;
   height: 30px;
-  fill: #FFF;
+  fill: #898787;
 }
 .footer-social__icon:hover{
   fill: #1B56C9;
@@ -365,7 +467,7 @@ body{
   height: 35px;
   border: 1px solid rgba(255, 255, 255, 0.50);
   background: #000000;
-  color: #F4F0F0;
+  color: #898787;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -394,13 +496,13 @@ body{
 
 
 .footer__icon-text{
-  color: #FFF;
+  color: #898787;
   text-align: center;
-  font-family: Roboto;
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font-weight: 400;
+ line-height: normal;
   margin-bottom: 10px;
 }
 .icon-container{
@@ -416,11 +518,13 @@ body{
   }
 
     ::placeholder{
-  color: #414141;
-  font-size: 15px;
+  color: #898787;;
+  font-size: 10px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
+  text-align: start;
+  padding-left: 10px;
 }
 .btn{
   width: 100px;
@@ -429,8 +533,7 @@ body{
   background: #1B56C9;
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
