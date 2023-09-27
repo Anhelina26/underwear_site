@@ -67,7 +67,7 @@ body{
   text-align: center;
   color: #F2178E;
   font-family: 'Oleo Script Swash Caps';
-  font-size: 26px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -167,16 +167,14 @@ body{
   .hero-header {
     color: #FFF;
     font-family: 'Oleo Script Swash Caps';
-    font-size: 35px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    position: absolute;
-    left: 20px;
     bottom: 100px;
-    margin-top: 0;
-    text-align: left;
+    text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 190px;
   }
 
 .hero-header:hover,
@@ -187,14 +185,13 @@ body{
   
   @media screen and (min-width: 780px) {
     .hero-header {
-      text-align: center;
       font-size: 35px;
       left: 50%; /* Зсуваємо текст до центру за допомогою відсотків */
       transform: translateX(-50%); /* Це вирівнює текст точно по центру */
       width: auto; /* Скасовуємо жорстко задану ширину */
       position: relative; /* Повертаємо відносне позиціонування */
       bottom:0;
-      margin-top: 250px;
+      margin-top: 180px;
      }
   }
 
