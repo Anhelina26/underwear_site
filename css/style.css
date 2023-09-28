@@ -135,6 +135,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
@@ -197,6 +199,7 @@ body{
   @media screen and (min-width:780px){
     .hero-header{
       font-size: 50px;
+      width: 584px;
     }
   }
 
