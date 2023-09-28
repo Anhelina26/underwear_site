@@ -451,15 +451,10 @@ body{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 328px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-@media screen and (max-width:1200px) {
-  .form-text{
-    text-align: center;
-  }
-}
 
 
 .form-text:hover,
@@ -482,25 +477,6 @@ body{
   justify-content: center;
 }
 
-.footer-input{
-  width: 250px;
-  height: 35px;
-  border: 1px solid #F2178E;
-  border-radius: 60px;
-  background: #000000;
-  color: #F2178E;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-@media screen and (min-width: 1200px )
-{
-  .footer-input{
-    width: 300px;
-    height: 35px;
-    margin-bottom:0;
-  }
-}
 
 .form-container{
   margin-bottom: 25px;
