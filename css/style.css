@@ -175,7 +175,7 @@ body{
   .hero-header {
     color: #FFF;
     font-family: 'Oleo Script Swash Caps';
-    font-size: 25px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 600;
     /* line-height: normal; */
@@ -194,7 +194,7 @@ body{
   cursor: pointer;
 }
 
-  @media screen and (min-width:1200px){
+  @media screen and (min-width:780px){
     .hero-header{
       font-size: 50px;
     }
