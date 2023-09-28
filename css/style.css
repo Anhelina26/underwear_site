@@ -129,7 +129,7 @@ body{
     background-image: url(../images/hero/small-hero@1x.jpg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 397px;
+    height: 390px;
     background-size: cover;
     position: relative;
     display: flex;
@@ -188,6 +188,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    
   }
 
 .hero-header:hover,
@@ -204,19 +205,63 @@ body{
   }
 
   
-/* .hero-text{
-    color: white;
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 400;
-    word-wrap: break-word;
-} */
+.hero-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    padding: 20px; 
+    background-color: rgba(213, 16, 105, 0.5);
+    animation: fadeInFromLeft 3s ease-in-out;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+@media screen and (min-width:1200px){
+  .hero-text{
+    font-size: 18px;
+  }
+}
+
+
+.hero-text:hover,
+.hero-text:active{
+  color:#F2178E;
+  cursor: pointer;
+}
 
 .hero-container{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
+
+.socials{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  height: 150px;
+  background-color: #0e0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .section {
   padding-top: 80px;
@@ -250,7 +295,7 @@ body{
 
 }
   
- @media screen and (min-width: 760px) {
+ @media screen and (min-width: 800px) {
   .galery-container{
     display: flex;
     justify-content: center;
@@ -409,6 +454,14 @@ body{
   width: 328px;
   margin-bottom: 15px;
 }
+
+@media screen and (max-width:1200px) {
+  .form-text{
+    text-align: center;
+  }
+}
+
+
 .form-text:hover,
 .form-text:active{
   color: #F2178E;
@@ -531,4 +584,10 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+  .footer-logo{
+    text-align: center;
+  }
 }

@@ -16,7 +16,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hover.css/css/hover.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     
@@ -24,7 +26,7 @@
     <header class="header">
         <div class="container">
         <ul class="header-container">
-            <li><a href="./index.html" class="logo header-logo hvr-grow">Un<span class="other-logo-color">real-under</span>wear</a></li>
+            <li><a href="./index.html" class="logo header-logo hvr-grow footer-logo">Un<span class="other-logo-color">real-under</span>wear</a></li>
             <li><a href="https://www.instagram.com/unreal_underwear/" 
                 class="header-link"
                 aria-label="LinkedIn"
@@ -61,81 +63,117 @@
 
      <section class="hero">
         <div class="container hero-container">
-            <a href="https://t.me/alice_in_underwear"><h1 class="hero-header">ОПТОВИЙ МАГАЗИН НИЖНЬОЇ БІЛИЗНИ</h1></a>
+            <a href="https://t.me/alice_in_underwear"><h1 class="hero-header animate__animated animate__zoomIn">ОПТОВИЙ МАГАЗИН НИЖНЬОЇ БІЛИЗНИ</h1></a>
+            <a href="https://t.me/alice_in_underwear" class="hero-text">Ввесь асортимент в телеграм каналі</a>
         </div>
      </section>
 
+     <section class="socials">
+        <ul class="footer-icon">
+            <li class="footer-social__item">
+                <a
+                    class="footer-social__link socials-icon"
+                    href="https://www.instagram.com/unreal_underwear/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <svg class="footer-social__icon socials-icon" width="20" height="20">
+                        <use href="./file.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a
+                    class="footer-social__link socials-icon"
+                    href="https://t.me/alice_in_underwear"
+                    aria-label="Telegram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="footer-social__icon socials-icon" width="20" height="20">
+                        <use href="./file.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="footer-social__item">
+                <a
+                    class="footer-social__link"
+                    href=""
+                    aria-label="Viber"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <svg class="footer-social__icon socials-icon" width="20" height="20">
+                        <use href="./file.svg#icon-viber"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+     </section>
     
      <section class="galery section">
      <div class="conteiner">
      <ul class="galery-container">
         <li class="first-gallery__images">
-            <img
+            <!-- <img
             srcset="
-            ./images/gallery-section/small-1@2x.jpg 1x,
-            ./images/gallery-section/small-1@2x.jpg 2x,
-            ./images/gallery-section/first-big@1x.jpg 1x,
-            ./imagesgallery-section/first-big@2x.jpg 2x
+            ./images/gallery-section/small-1@2x.jpg 280w,
+            ./images/gallery-section/small-1@2x.jpg 560w,
+         
+            ./images/gallery-section/first-big@1x.jpg 280w,
+            ./images/gallery-section/first-big@2x.jpg  560w
             "
-            src="./images/gallery-section/small-1@1x.jpg"
-            alt="товар"
-            width="280"
-            height="393"
-            loading="lazy"
-            class="hvr-grow"
-          />
+            sizes="(min-width: 1200px) 280px, (min-width: 768px) 250px, 100vw"
+            src="./images/gallery-section/small-1@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
+            /> -->
         </li>
 
         <ul class="small-container">
         <li class="small-container_first-image">
-            <img
+            <!-- <img
             srcset="
-            ./images/gallery-section/small-2@1x.jpg 1x,
-            ./images/gallery-section/small-2@2x.jpg 2x,
-            ./images/gallery-section/first-small@1x.jpg 1x,
-            ./images/gallery-section/first-small@2x.jpg 2x
+            ./images/gallery-section/small-2@1x.jpg 375w,
+            ./images/gallery-section/small-2@2x.jpg 750w,
+            
+            ./images/gallery-section/first-small@1x.jpg 236w,
+            ./images/gallery-section/first-small@2x.jpg 472w
             "
-            src="./images/gallery-section/small-2@1x.jpg"
-            alt="товар"
-            width="298"
-            height="197"
-            loading="lazy"
-            class="hvr-grow"
-          />
+            sizes="(min-width: 1200px) 236px, (min-width: 768px) 235px, 100vw"
+            src="./images/gallery-section/small-2@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
+            /> -->
         </li>
         <li>
             
          
-            <img
+            <!-- <img
             srcset="
-            ./images/gallery-section/small-3@1x.jpg 1x,
-            ./images/gallery-section/small-3@2x.jpg 2x,
-            ./images/gallery-section/second-small@1x.jpg 1x,
-            ./images/gallery-section/second-small@2x.jpg 2x
+            ./images/gallery-section/small-3@1x.jpg 375w,
+            ./images/gallery-section/small-3@2x.jpg 750w,
+         
+            ./images/gallery-section/second-small@1x.jpg 236w,
+            ./images/gallery-section/second-small@2x.jpg 472w
             "
-            src="./images/gallery-section/small-3@1x.jpg"
-            alt="товар"
-            width="298"
-            height="179"
-            loading="lazy"
-            class="hvr-grow"
-            />
+        
+            sizes="(min-width: 1200px) 236px, (min-width: 768px) 235px, 100vw"
+            src="./images/gallery-section/small-3@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
+            /> -->
         </li>
         <li>
         </ul>
             
-            <img
+            <!-- <img
        srcset="
-            ./images/gallery-section/small-4@1x.jpg 1x,
-            ./images/gallery-section/small-4@2x.jpg 2x,
-           ./images/gallery-section/second-big@1x.jpg 1x,
-           ./images/gallery-section/second-big@2x.jpg 2x"
-           src="./images/gallery-section/small-4@1x.jpg"
-           alt="товар"
-           width="280"
-           height="393"
-           loading="lazy" 
-           class="hvr-grow"/>
+            ./images/gallery-section/small-4@1x.jpg 280w,
+            ./images/gallery-section/small-4@2x.jpg 560w,
+           ./images/gallery-section/second-big@1x.jpg 280w,
+           ./images/gallery-section/second-big@2x.jpg 560w"
+           sizes="(min-width: 1200px) 280px, (min-width: 768px) 250px,
+           (min-height:780px) 303px,  100vw"
+           src="./images/gallery-section/small-4@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
+           /> -->
+         
         </li>
     </ul>
    
@@ -157,19 +195,27 @@
     <ul class="second-galery-container">
         <li>
        <img srcset="
+       images\second-galery\small-1@1x.jpg 375w,
+       images\second-galery\small-1@2x.jpg 750w,
+            ./images/second-galery/mid-1@1x.jpg 176w,
+            ./images/second-galery/mid-1@2x.jpg 352w,
             ./images/second-galery/big-1@1x.jpg 270w,
             ./images/second-galery/big-1@2x.jpg 540w" 
-            sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-        src="./images/second-galery/big-1@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"/>
+            sizes="(min-width: 1200px) 236px, (min-width: 768px) 176px, (min-width: 480px) 375px, 100vw"
+        src="./images/second-galery/small-1@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"/>
           </a>
         </li>
 
         <li>
         
         <img srcset="
+        images\second-galery\small-2@1x.jpg 375w,
+        images\second-galery\small-2@2x.jpg 750w,
+        ./images/second-galery/mid-2@2x.jpg 176w,
+        ./images/second-galery/mid-2@2x.jpg 352w,
         ./images/second-galery/bg-2@1x.jpg 270w,
-        ./images/second-galery/bg-2@2x.jpg 540w" sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-      src="./images/second-galery/bg-2@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
+        ./images/second-galery/bg-2@2x.jpg 540w" sizes="(min-width: 1200px) 236px, (min-width: 768px) 176px, (min-width: 480px) 375px, 100vw"
+      src="./images/second-galery/small-2@1x.jpg" alt="товар" loading="lazy" class="hvr-grow"
       />
         </li>
 
@@ -177,20 +223,28 @@
 
        
             <img srcset="
+            images\second-galery\small-3@1x.jpg 375w,
+            images\second-galery\small-3@2x.jpg 750w,
+            ./images/second-galery/mid-3@1x.jpg 176w,
+            ./images/second-galery/mid-3@2x.jpg 352w,
             ./images/second-galery/bg-3@1x.jpg 270w,
             ./images/second-galery/bg-3@2x.jpg 540w
-            " sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-             src="./images/second-galery/bg-3@1x.jpg" alt="товар" loading="lazy" loading="lazy" class="hvr-grow"
+            " sizes="(min-width: 1200px) 236px, (min-width: 768px) 176px, (min-width: 480px) 375px, 100vw"
+             src="./images/second-galery/small-3@1x.jpg" alt="товар" loading="lazy" loading="lazy" class="hvr-grow"
          />
 
           
         </li>
         <li>
                 <img srcset="
+                images\second-galery\small-4@1x.jpg 375w,
+                images\second-galery\small-4@2x.jpg 750w,
+                ./images/second-galery/mid-4@1x.jpg 176w,
+                ./images/second-galery/mid-4@2x.jpg 352w,
                 ./images/second-galery/bg-4@1x.jpg 270w,
                 ./images/second-galery/bg-4@2x.jpg 540w
-                " sizes="(min-width: 1200px) 236px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                 src="./images/second-galery/bg-4@1x.jpg" alt="товар" loading="lazy"  class="hvr-grow"
+                " sizes="(min-width: 1200px) 236px, (min-width: 768px) 176px, (min-width: 480px) 375px, 100vw"
+                 src="./images/second-galery/small-4@1x.jpg" alt="товар" loading="lazy"  class="hvr-grow"
                  />
             
              </li>
@@ -216,7 +270,7 @@
                         href="https://www.instagram.com/unreal_underwear/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Instagram icon"
+                        aria-label="Instagram"
                     >
                         <svg class="footer-social__icon" width="20" height="20">
                             <use href="./file.svg#icon-instagram"></use>
@@ -227,7 +281,7 @@
                     <a
                         class="footer-social__link"
                         href="https://t.me/alice_in_underwear"
-                        aria-label="Twitter"
+                        aria-label="Telegram"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -241,7 +295,7 @@
                     <a
                         class="footer-social__link"
                         href=""
-                        aria-label="LinkedIn"
+                        aria-label="Viber"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
