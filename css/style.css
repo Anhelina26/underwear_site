@@ -358,6 +358,8 @@ body{
   padding: 15px;
   border: 1px solid rgba(78, 48, 48, 0.00);
   background: rgba(0, 0, 0, 0.58);
+  animation: fadeInFromLeft 3s ease-in-out;
+
 }
 
 @media screen and (min-width: 780px) { /* Додамо "px" після значення ширини */
